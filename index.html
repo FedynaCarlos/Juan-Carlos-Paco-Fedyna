@@ -181,6 +181,7 @@
                 padding-left: 138px;
                 padding-top: 20px;
                 padding-bottom: 15px;
+                color: white;
             }
 
             .parrafos {
@@ -198,8 +199,11 @@
             }
 
             .textos-experiencia1 {
-                text-align: left;
-
+                margin: 10px;
+                padding: 10px;
+                color: white;
+                text-align: justify;
+                font-size: 1.5rem;
             }
 
             /* Media query para pantallas menores a 768px */
@@ -267,6 +271,22 @@
                     font-size: 1rem;
                 }
 
+                .card-title1 {
+                    margin-top: 5px;
+                    padding: 40px;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    color: white;
+                }
+
+                .card-title2 {
+                    display: inline-block;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: white;
+                    position: relative;
+                }
+
                 .texto_de_cabecera {
                     font-size: 1rem;
                     padding-right: 15px;
@@ -275,10 +295,34 @@
                     padding-bottom: 10px;
                 }
 
+                .itau {
+                    color: white;
+                    text-align: justify;
+                    padding: 20px;
+                    margin: 8px;
+                }
+
+                .parrafos1 {
+                    text-align: left;
+                    color: #FFF;
+                    padding: 30px;
+                    margin: 20px;
+                    font-size: 1.5rem;
+                }
+
+                .texto_de_cabecera {
+                    text-align: center;
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: bolder;
+                    padding: 20px;
+                    margin: 6px;
+                }
+
                 .acerca-de-mi,
                 .acerca-de-mi1,
                 .acerca-de-mi2 {
-                    font-size: 1.5rem;
+                    font-size: 2.5rem;
                     text-align: center;
                 }
 
@@ -296,13 +340,18 @@
     </head>
 
     <body>
+        <script>
+            window.onload = function () {
+                alert('Bienvenido a mi curriculum vitae, Soy Paco Fedyna');
+            };
+        </script>
 
         <div class="cv-container" id="bloke1">
             <div class="container">
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                        <a class="navbar-brand" href="#">Developer Web Full Stack</a>
+                        <a class="navbar-brand" href="#"></a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -381,16 +430,21 @@
                     </div>
                     <div class="card-sin-efectos col-lg-8" id="">
                         <div class="row textos-experiencia1">
-                            <ul class="parrafos">
-                                <h1 class="acerca-de-mi2">Experiencia laboral</h1>
 
-                                <li> Banco Macro BMA freelancer
-                                    Desarrollador Web Full Stack (actualmente)</li>
-                                <li> Agape Libros Srl</li>
-                                <li>Cuspide Libros Srl</li>
-                                <li> Colegio Montserrat</li>
-                                <li>Coniper SA</li>
-                            </ul>
+                            <h1 class="acerca-de-mi2">Experiencia laboral</h1>
+
+                            <p class="itau">
+                                Banco Macro BMA freelancer
+                                Desarrollador Web Full Stack. <br>
+                                Mantenimiento del sitio web.<br>
+                                Cambio de marca de Itaú a Macro BMA.<br>
+                                Creación de Landing.<br>
+                                Implementación de actualizaciones de Landing.<br>
+                                Colaboración con el equipo de Marketing.
+
+
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -422,7 +476,7 @@
                     <div class="card-sin-efectos col-lg-8" id="">
                         <div class="row textos-experiencia">
                             <h1 class="acerca-de-mi">Experiencia profesional</h1>
-                            <br>
+
                             <ul class="parrafos">
                                 <h3>Digital House</h3>
                                 <li> Desarrollador Web Full Stack JavaScript</li>
@@ -461,9 +515,7 @@
             </div>
         </div>
 
-        /*Fín del código para desktop*/
-        /****************************************/
-        /*inicio del código para desktop*/
+
 
         <div class="cv-container" id="bloke2">
             <div class="container">
@@ -483,7 +535,7 @@
                                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/seccion-1.html">seccion 1</a>
+                                    <a class="nav-link" href="#">seccion 1</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Seccion 2</a>
@@ -549,16 +601,18 @@
                     </div>
                     <div class="card-sin-efectos col-lg-12" id="">
                         <div class="row textos-experiencia1">
-                            <ul class="parrafos">
-                                <h1 class="acerca-de-mi2">Experiencia laboral</h1>
+                            <h1 class="acerca-de-mi2">Experiencia laboral</h1>
+                            <p class="itau">
+                                Banco Macro BMA freelancer
+                                Desarrollador Web Full Stack. <br>
+                                Mantenimiento del sitio web.<br>
+                                Cambio de marca de Itaú a Macro BMA.<br>
+                                Creación de Landing.<br>
+                                Implementación de actualizaciones de Landing.<br>
+                                Colaboración con el equipo de Marketing.
 
-                                <li> Banco Macro BMA freelancer
-                                    Desarrollador Web Full Stack (actualmente)</li>
-                                <li> Agape Libros Srl</li>
-                                <li>Cuspide Libros Srl</li>
-                                <li> Colegio Montserrat</li>
-                                <li>Coniper SA</li>
-                            </ul>
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -567,10 +621,11 @@
                 <div class=" row">
                     <div class="card-sin-efectos col-lg-12">
                         <div class="row textos-experiencia">
-                            <h1 class="acerca-de-mi1">Acerca de mí</h1>
-                            <br>
 
-                            <ul class="parrafos">
+
+
+                            <ul class="parrafos1">
+                                <h1 class="acerca-de-mi1">Skills</h1>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -605,10 +660,12 @@
                                     Implemendación de React en el sitio web para lograr una mejor
                                     experiencia de usuario.
                                 </p>
+                                <br>
                                 <h3>Codo a codo, Agencia de Aprendizaje <br> del Gobierno de la Ciudad de Buenos Aires
                                 </h3>
                                 <li>Desarrollador Web Full Stack Python</li>
                                 <h4>Proyecto Integrador Viajes al espacio</h4>
+                                <br>
                                 <p>Realización de un proyecto de un sitio web responsive utilizando
                                     lo aprendido en clase, el proyecto estaba realizado con
                                     JavaScript y Python, tanto desde el Front-end como el Backend.
@@ -617,19 +674,20 @@
                             </ul>
                         </div>
                     </div>
-                    <footer class="bg-dark text-light text-center py-12">
+
+                    <footer class="bg-dark text-light text-center py-12" style="padding:20px">
                         <!-- Botón de regreso a tu página -->
                         <button onclick="window.history.back()" class="btn btn-primary"><a
                                 href="/images/JuanCarlosFedyna.pdf" <button class="enlace-descarga" download>Descargar
                                 cv</a></button>
-                        <p>Derechos reservados &copy; 2024</p>
+                        <p>Derechos reservados Juan Carlos Fedyna &copy; 2024</p>
                     </footer>
                 </div>
                 <!--Fin componente tarjeta n 3-->
             </div>
 
         </div>
-        /*version mobil fin*/
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
