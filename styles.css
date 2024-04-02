@@ -1,0 +1,15 @@
+.card-body{
+  background-color: rgb(159, 159, 197);
+}
+.container{
+background-color: black;
+}
+.bg-dark1{
+background-color: slategrey!important;
+}
+.card{
+  background: darkgoldenrod!important;
+}
+.nav-link{
+  color: white!important;
+}

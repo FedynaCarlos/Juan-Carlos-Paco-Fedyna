@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Juan Carlos Paco Fedyna </title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            /* Estilos generales para ambos bloques */
+            .container {
+                background-color: #2b2b2b !important;
+            }
+
+            .card-sin-efectos {
+                background-color: #2b2b2b;
+                margin-top: 10px;
+                border: 1px solid #131313;
+            }
+
+            #card1 {
+                background-color: #2b2b2b;
+                margin-top: 22px;
+                border: 1px solid #131313;
+            }
+
+            .texto_cabecera {
+                font-size: 1.5rem;
+            }
+
+            /*inicio efecto luces*/
+
+            .card-title,
+            .card-title2 {
+                display: inline-block;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                position: relative;
+            }
+
+            .flash {
+                animation: flash 6s infinite;
+            }
+
+            @keyframes flash {
+                0% {
+                    text-shadow: -10px 0px 20px white, -20px 0px 40px white, -30px 0px 60px white, -40px 0px 80px white, -50px 0px 100px white;
+                }
+
+                50% {
+                    text-shadow: 50px 0px 20px white, 40px 0px 40px white, 30px 0px 60px white, 20px 0px 80px white, 10px 0px 100px white;
+                }
+
+                100% {
+                    text-shadow: -10px 0px 20px white, -20px 0px 40px white, -30px 0px 60px white, -40px 0px 80px white, -50px 0px 100px white;
+                }
+            }
+
+            /*fin efecto luces*/
+
+            .cv-container {
+                margin: 0px;
+                background-color: #131313;
+                padding: 20px;
+            }
+
+            .cv-section {
+                margin-bottom: 30px;
+            }
+
+            .cv-section h2 {
+                margin-bottom: 15px;
+            }
+
+            .cv-section ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .cv-section ul li {
+                margin-bottom: 10px;
+            }
+
+            .navbar-dark {
+                background-color: #2b2b2b !important;
+                width: 100%;
+            }
+
+
+
+            .enlace-descarga {
+                color: white !important;
+                text-decoration: none;
+            }
+
+
+            .imagen-prueba {
+                background-color:
+                    #2b2b2b;
+
+            }
+
+            .imagen-prueba5 {
+                background-color: #2b2b2b;
+            }
+
+            .imagen-prueba3 {
+                background-color: #86868B;
+                ;
+                margin: 1px;
+                padding: 10px;
+            }
+
+            .lista-1 {
+                padding: 20px;
+                font-family: sans-serif;
+                color: #FFF;
+                border: 1px solid #131313;
+            }
+
+            .lista-2 {
+                font-size: 1.2rem;
+                padding-left: 20px;
+                margin-left: 10px;
+            }
+
+            .lista-2:hover {
+                color: white;
+                font-size: 20px;
+                ;
+            }
+
+
+
+            .card-title1 {
+                margin-top: 5px;
+                padding: 40px;
+                font-size: 4.5rem;
+                text-align: center;
+                color: white;
+            }
+
+            .card-title2 {
+                font-size: 2.5rem;
+                /* Cambié el tamaño de fuente de h4 */
+                text-align: center;
+                color: white;
+            }
+
+            .texto_de_cabecera {
+                text-align: justify;
+                font-size: 1.5rem;
+                color: white;
+                font-weight: bolder;
+                padding-right: 120px;
+                padding-left: 120px;
+                padding-top: 70px;
+                padding-bottom: 10px;
+            }
+
+            /*sección acerca de mí*/
+            .acerca-de-mi {
+                padding: 10px;
+                font-size: 2.5rem;
+                color: white;
+                text-align: center;
+            }
+
+            .acerca-de-mi1 {
+                padding-top: 20px;
+                font-size: 2.5rem;
+                color: white;
+                text-align: center;
+            }
+
+            .acerca-de-mi2 {
+                text-align: left;
+                padding-left: 138px;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+
+            .parrafos {
+                margin: 2px;
+                padding-top: 5px;
+                padding-left: 80px;
+                font-size: 1.5rem;
+                color: white;
+            }
+
+            /*sección acerca de mí*/
+            .textos-experiencia {
+                margin: 0px;
+                padding-top: 20px;
+            }
+
+            .textos-experiencia1 {
+                text-align: left;
+
+            }
+
+            /* Media query para pantallas menores a 768px */
+            @media (max-width: 768px) {
+                #bloke1 {
+                    display: none;
+                    /* Oculta el primer bloque */
+                }
+
+                #bloke2 {
+                    display: block;
+                    /* Muestra el segundo bloque */
+                }
+
+                #bloke2 {
+                    background-color: black;
+                }
+
+                .texto_de_cabecera {
+                    text-align: justify;
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: bolder;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .acerca-de-mi2 {
+                    text-align: center;
+                    padding: 10px;
+                    margin: 10px;
+                }
+
+
+
+
+
+            }
+
+            /* Media query para pantallas mayores o iguales a 768px */
+            @media (min-width: 768px) {
+                #bloke1 {
+                    display: block;
+                    /* Muestra el primer bloque */
+                }
+
+                #bloke2 {
+                    display: none;
+                    /* Oculta el segundo bloque */
+                }
+            }
+        </style>
+        <!--aggregado hoy 28-->
+        <style>
+            /* Estilos generales para ambos bloques */
+            .container {
+                background-color: #2b2b2b !important;
+            }
+
+            /* Media query para pantallas menores a 768px */
+            @media (max-width: 768px) {
+                .texto_cabecera {
+                    font-size: 1rem;
+                }
+
+                .texto_de_cabecera {
+                    font-size: 1rem;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                }
+
+                .acerca-de-mi,
+                .acerca-de-mi1,
+                .acerca-de-mi2 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                .parrafos {
+                    padding-left: 15px;
+                    font-size: 1rem;
+                }
+
+                .card {
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="cv-container" id="bloke1">
+            <div class="container">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                        <a class="navbar-brand" href="#">Developer Web Full Stack</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+            </nav>
+            </header>
+
+            <div class="container mt-4">
+                <div class=" row">
+                    <div class="card col-lg-4 imagen-prueba5">
+                        <p></p>
+                        <img src="./images/pacoFedyna.jpg" alt="Foto de Juan Carlos Paco Fedyna"
+                            style="background: #2b2b2b;">
+
+                        <ul class="lista-1">
+                            <li class="lista-2">
+                                <strong>Nombre: </strong><em>Juan Carlos Fedyna </em>
+                            </li>
+                            <li class="lista-2"><em>Edad: 38</em></li>
+                            <li class="lista-2"><em>C.A.B.A</em></li>
+                            <li class="lista-2"><em>Argentina</em></li>
+                            <li class="lista-2"><em>Cel:+54-9-1132712055</em><a class="nav-link"
+                                    href="https://wa.me/1132712055?text=Hola,%20¿cómo%20estás%3F" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                                        alt="WhatsApp" width="30" height="30">
+                                </a></li>
+                            <li class="lista-2"><em>E-mail: pacofedyna@gmail.com</em> <a class="nav-link"
+                                    href="mailto:pacofedyna@gmail.com">
+                                    <img src="/images/correo-electronico.gif" alt="Correo electrónico" width="30"
+                                        height="30">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="card col-lg-8" id="card1">
+                        <h1 class="card-title1 card-title">Juan Carlos Fedyna</h1>
+                        <h4 class="card-title2 card-title">Full Stack Developer</h4>
+                        <div class="row texto_de_cabecera">
+                            <p>Como full stack developer, tengo experiencia en el desarrollo tanto frontend como backend
+                                de aplicaciones web. Domino JavaScript y Python, incluyendo Node.js y Django, así como
+                                tecnologías como React, HTML y CSS para crear interfaces de usuario dinámicas. En el
+                                backend, gestiono bases de datos con MySQL y configuro servidores. Mi enfoque integral
+                                garantiza soluciones completas y eficientes para diversos proyectos tecnológicos."</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Componente de tarjeta 2-->
+                <div class=" row">
+                    <div class="card-sin-efectos col-lg-4">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi1">Acerca de mí</h1>
+                            <br>
+                            <p class="parrafos">Soy una persona proactiva,
+                                organizada,
+                                responsable, con buenas relaciones
+                                interpersonales.
+                                Siempre tengo la mejor disposición
+                                para nuevos desafios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-sin-efectos col-lg-8" id="">
+                        <div class="row textos-experiencia1">
+                            <ul class="parrafos">
+                                <h1 class="acerca-de-mi2">Experiencia laboral</h1>
+
+                                <li> Banco Macro BMA freelancer
+                                    Desarrollador Web Full Stack (actualmente)</li>
+                                <li> Agape Libros Srl</li>
+                                <li>Cuspide Libros Srl</li>
+                                <li> Colegio Montserrat</li>
+                                <li>Coniper SA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin componente tarjeta n 2-->
+                <!--Componente de tarjeta 3-->
+                <div class=" row">
+                    <div class="card-sin-efectos col-lg-4">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi1">Skills</h1>
+                            <br>
+
+                            <ul class="parrafos">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Node Js</li>
+                                <li>Express</li>
+                                <li>Git</li>
+                                <li>MySQL</li>
+                                <li> APIs.</li>
+                                <li>Python</li>
+                                <li> Flask</li>
+                                <li> Django</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="card-sin-efectos col-lg-8" id="">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi">Experiencia profesional</h1>
+                            <br>
+                            <ul class="parrafos">
+                                <h3>Digital House</h3>
+                                <li> Desarrollador Web Full Stack JavaScript</li>
+                                <h4>Proyecto Integrador Bodega-grupo-5</h4>
+                                <p>Planificación y estimación del desarrollo de la página Web.
+                                    Traducción del diseño a componentes web. Manejo de
+                                    interacciones del usuario y animaciones de la interfaz.
+                                    Implementación en el desarrollo de buenas prácticas (responsive,
+                                    UX). Manejo de conexiones asíncronas con Ajax y/o Fetch. Uso
+                                    de Session y Cookies para almacenado de información.
+                                    Implementación de validaciones en JavaScript para formularios.
+                                    Implemendación de React en el sitio web para lograr una mejor
+                                    experiencia de usuario.
+                                </p>
+                                <h3>Codo a codo, Agencia de Aprendizaje <br> del Gobierno de la Ciudad de Buenos Aires
+                                </h3>
+                                <li>Desarrollador Web Full Stack Python</li>
+                                <h4>Proyecto Integrador Viajes al espacio</h4>
+                                <p>Realización de un proyecto de un sitio web responsive utilizando
+                                    lo aprendido en clase, el proyecto estaba realizado con
+                                    JavaScript y Python, tanto desde el Front-end como el Backend.
+                                </p>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <footer class="bg-dark text-light text-center py-4">
+                        <!-- Botón de regreso a tu página -->
+                        <button onclick="window.history.back()" class="btn btn-primary"><a
+                                href="/images/JuanCarlosFedyna.pdf" <button class="enlace-descarga" download>Descargar
+                                cv</a></button>
+                        <p>Derechos reservados &copy; 2024</p>
+                    </footer>
+                </div>
+                <!--Fin componente tarjeta n 3-->
+            </div>
+        </div>
+
+        /*Fín del código para desktop*/
+        /****************************************/
+        /*inicio del código para desktop*/
+
+        <div class="cv-container" id="bloke2">
+            <div class="container">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                        <a class="navbar-brand" href="#">Developer Web Full Stack</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/seccion-1.html">seccion 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Seccion 2</a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+            </nav>
+            </header>
+
+            <div class="container mt-4">
+                <div class=" row">
+                    <div class="card col-lg-12 imagen-prueba5">
+                        <p></p>
+                        <img src="/images/paco-sin-fondo.png" alt="Foto de Juan Carlos Paco Fedyna"
+                            style="background: #2b2b2b;">
+
+                        <ul class="lista-1">
+                            <li class="lista-2">
+                                <strong>Nombre: </strong><em>Juan Carlos Fedyna </em>
+                            </li>
+                            <li class="lista-2"><em>Edad: 38</em></li>
+                            <li class="lista-2"><em>C.A.B.A</em></li>
+                            <li class="lista-2"><em>Argentina</em></li>
+                            <li class="lista-2"><em>Cel:+54-9-1132712055</em><a class="nav-link"
+                                    href="https://wa.me/1132712055?text=Hola,%20¿cómo%20estás%3F" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                                        alt="WhatsApp" width="30" height="30">
+                                </a></li>
+                            <li class="lista-2"><em>E-mail: pacofedyna@gmail.com</em> <a class="nav-link"
+                                    href="mailto:pacofedyna@gmail.com">
+                                    <img src="/images/correo-electronico.gif" alt="Correo electrónico" width="30"
+                                        height="30">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="card col-lg-12" id="card1">
+                        <h1 class="card-title1 card-title">Juan Carlos Fedyna</h1>
+                        <h4 class="card-title2 card-title">Full Stack Developer</h4>
+                        <div class="row texto_de_cabecera">
+                            <p>Como full stack developer, tengo experiencia en el desarrollo tanto frontend como backend
+                                de aplicaciones web. Domino JavaScript y Python, incluyendo Node.js y Django, así como
+                                tecnologías como React, HTML y CSS para crear interfaces de usuario dinámicas. En el
+                                backend, gestiono bases de datos con MySQL y configuro servidores. Mi enfoque integral
+                                garantiza soluciones completas y eficientes para diversos proyectos tecnológicos."</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Componente de tarjeta 2-->
+                <div class=" row">
+                    <div class="card-sin-efectos col-lg-12">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi1">Acerca de mí</h1>
+                            <br>
+                            <p class="parrafos">Soy una persona proactiva,
+                                organizada,
+                                responsable, con buenas relaciones
+                                interpersonales.
+                                Siempre tengo la mejor disposición
+                                para nuevos desafios.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-sin-efectos col-lg-12" id="">
+                        <div class="row textos-experiencia1">
+                            <ul class="parrafos">
+                                <h1 class="acerca-de-mi2">Experiencia laboral</h1>
+
+                                <li> Banco Macro BMA freelancer
+                                    Desarrollador Web Full Stack (actualmente)</li>
+                                <li> Agape Libros Srl</li>
+                                <li>Cuspide Libros Srl</li>
+                                <li> Colegio Montserrat</li>
+                                <li>Coniper SA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin componente tarjeta n 2-->
+                <!--Componente de tarjeta 3-->
+                <div class=" row">
+                    <div class="card-sin-efectos col-lg-12">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi1">Acerca de mí</h1>
+                            <br>
+
+                            <ul class="parrafos">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Node Js</li>
+                                <li>Express</li>
+                                <li>Git</li>
+                                <li>MySQL</li>
+                                <li> APIs.</li>
+                                <li>Python</li>
+                                <li> Flask</li>
+                                <li> Django</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="card-sin-efectos col-lg-12" id="">
+                        <div class="row textos-experiencia">
+                            <h1 class="acerca-de-mi">Experiencia profesional</h1>
+                            <br>
+                            <ul class="parrafos">
+                                <h3>Digital House</h3>
+                                <li> Desarrollador Web Full Stack JavaScript</li>
+                                <h4>Proyecto Integrador Bodega-grupo-5</h4>
+                                <p>Planificación y estimación del desarrollo de la página Web.
+                                    Traducción del diseño a componentes web. Manejo de
+                                    interacciones del usuario y animaciones de la interfaz.
+                                    Implementación en el desarrollo de buenas prácticas (responsive,
+                                    UX). Manejo de conexiones asíncronas con Ajax y/o Fetch. Uso
+                                    de Session y Cookies para almacenado de información.
+                                    Implementación de validaciones en JavaScript para formularios.
+                                    Implemendación de React en el sitio web para lograr una mejor
+                                    experiencia de usuario.
+                                </p>
+                                <h3>Codo a codo, Agencia de Aprendizaje <br> del Gobierno de la Ciudad de Buenos Aires
+                                </h3>
+                                <li>Desarrollador Web Full Stack Python</li>
+                                <h4>Proyecto Integrador Viajes al espacio</h4>
+                                <p>Realización de un proyecto de un sitio web responsive utilizando
+                                    lo aprendido en clase, el proyecto estaba realizado con
+                                    JavaScript y Python, tanto desde el Front-end como el Backend.
+                                </p>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <footer class="bg-dark text-light text-center py-12">
+                        <!-- Botón de regreso a tu página -->
+                        <button onclick="window.history.back()" class="btn btn-primary"><a
+                                href="/images/JuanCarlosFedyna.pdf" <button class="enlace-descarga" download>Descargar
+                                cv</a></button>
+                        <p>Derechos reservados &copy; 2024</p>
+                    </footer>
+                </div>
+                <!--Fin componente tarjeta n 3-->
+            </div>
+
+        </div>
+        /*version mobil fin*/
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                // Selecciona todas las tarjetas con la clase "card" y agrega un evento de clic
+                $(".card").click(function () {
+                    // Guarda una referencia al elemento actual
+                    var $this = $(this);
+
+                    // Aplica un efecto de animación para mover la tarjeta hacia abajo
+                    $this.animate({marginTop: '+=50px'}, "slow");
+
+                    // Después de 2 segundos, restablece la posición de la tarjeta
+                    setTimeout(function () {
+                        $this.animate({marginTop: '0px'}, "slow");
+                    }, 2000);
+                });
+            });
+        </script>
+        <script>
+            var elements = document.querySelectorAll('.card-title');
+
+            elements.forEach(function (element) {
+                element.addEventListener('mouseenter', function () {
+                    if (!this.classList.contains('flash')) {
+                        this.classList.add('flash');
+                    }
+                });
+
+                element.addEventListener('mouseleave', function () {
+                    this.classList.remove('flash');
+                });
+            });
+
+            setTimeout(function () {
+                elements.forEach(function (element) {
+                    element.addEventListener('mouseenter', function () {
+                        if (!this.classList.contains('flash')) {
+                            this.classList.add('flash');
+                        }
+                    });
+
+                    element.addEventListener('mouseleave', function () {
+                        this.classList.remove('flash');
+                    });
+                });
+            }, 10000);
+        </script>
+
+    </body>
+
+</html>
